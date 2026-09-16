@@ -1,0 +1,101 @@
+AIM:ToperformdifferentclassificationalgorithmsondatasetsinWeka(ID3,J48,
+NaïveBayes,andk-NN),analyzeentropyandKappastatistic,extractrules,plotROC
+curves, and compare classifier performance.
+WEKAcomesbundledwithseveralsampledatasetssuchasIris,Weather,Diabetes,etc.To
+explore datasets:
+OpenWEKAExplorer.
+ClickOpenfileinthePreprocesspanel.
+NavigatetothedatafolderwithintheWEKAinstallationdirectory.
+Selectadatasetlikeiris.arfforweather.arff.
+Loadingadatasetallowsyoutoviewtheattributesandinstancesandapplypreprocessing, classification,
+clustering, and more.
+OpenWEKAExplorer.
+InthePreprocesspanel,clickOpenfile.
+Select theiris.arff file.
+Thedatasetloadsanddisplaysattributessuchassepallength,sepalwidth,petallength,petal
+width, and class.
+Youcannowproceedtoclassify,cluster,orvisualizethisdataset.
+Afterloadingtheirisdatasetthevisualizationofthepreprocessisasshowninthefigure. The
+attributes aresepallength , sepalwidth,petallength,petalwidth.
+Thevalueandstatisticoftheeachattributeisasshown.
+Histogramsofeachattributeofthedataisshownbelow.
+Itisimportanttodiscritizethedatabecauseitinvolvestransformingcontinuous
+numeric attributesinto discrete, categorical (nominal)attributes.
+Openthefilter.
+SelecttheUnsuperviseddata.
+Clickonthe discretize.
+Applythisfilteronthedata.
+Filter Application:A"Discretize"filterhasbeenappliedtothe"iris"dataset.This
+filter,Discretize-B10-M-1.0-Rfirst-last-precision6,transformsnumericalattributesinto
+nominal(categorical)onesbydividingtheminto10bins.
+Toapplytheclassificationonthedataset,clickontheclassifypanel.
+Selectthedifferentalgorithmstoperformonthedata(J48,Id3,etc..,
+classification algorithms). SelecttheJ48 algorithmasshowninfig.
+AfterapplyingtheJ48algorithm,thedefaultCross-validationfolds10intestoptions.
+Click onthe start buttonto see theclassifier output.
+Intheresultlist,itshowsthepresentrunningalgorithm.
+Clickontherightsidetoseemoreoptions.
+ClickontheVisualizetreeoptiontoseetheoutputinthetreemode.
+Dotheprocessasshowninthefigure.
+Classifiertreevisualizerasshowninfig.
+DATASET:
+PerformingtheNaïve-bayesclassificationonthesamedataset(i.e..isIrisdataset).
+HerethedatasetIrisisalreadyindiscretizationmodeaswedoneintheabove
+algorithm.
+Clickontheclassifypanel.
+SelecttheClassifiersandopenthebayes.
+InthatbayesselecttheNaiveBayesalgorithm.
+Dotheprocessasshowninthefigure.
+Inthetestoptionsthedefaultcrossvalidationfoldsis10.
+ClickonthestartbuttontoobservetheclassifieroutputfortheNavie-bayesAlgorithm.
+● 
+KItisalsooneoftheclassificationalgorithm likeJ48,Id3etc..
+● 
+ChoosetheIBkalgorithmfromthelazyclassifiers.
+● 
+Asshowninfigure.
+● 
+Inthetestoptionsthedefaultcrossvalidationfoldsis10.
+● 
+ClickonthestartbuttontoobservetheclassifieroutputfortheIBkAlgorithm.
+HereitistheGenericObjectEditorfortheclassificationontheirisdatasetwithIbk
+ROCCurveVisualizationinWeka(IBkClassifier)
+● 
+AfterexecutingtheIBk(k=3)classifierontheIrisdatasetusing10-foldcross
+validation, the results are listed under the Resultlist.
+● 
+Byright-clickingontheclassifierresult,Wekaprovidesmultipleoptionsfor
+analyzing the model.
+● 
+ClickontheVisualizethresholdcurve,inthatselecttheIris-setosa.
+● 
+ROCCurveplots the True Positive Rate (TPR) against the False Positive
+Rate (FPR).
+● 
+It isused to evaluate the discriminative ability of a classifier.
+● 
+TheAreaUnderCurve (AUC)values shown in the summary are very close to
+1.0, indicating that the classifier has high accuracy and strong class
+separation capability.
+● 
+ClickontheVisualizethresholdcurve,inthatselecttheIris-versicolor.
+● 
+ROCCurveplots the True Positive Rate (TPR) against the False Positive
+Rate (FPR).
+● 
+It isused to evaluate the discriminative ability of a classifier.
+● 
+TheAreaUnderCurve (AUC)values shown in the summary are very close to
+1.0, indicating that the classifier has high accuracy and strong class
+separation capability.
+● 
+ClickontheVisualizethresholdcurve,inthatselecttheIris-versicolor.
+● 
+ROCCurveplots the True Positive Rate (TPR) against the False Positive
+Rate (FPR).
+● 
+It isused to evaluate the discriminative ability of a classifier.
+● 
+TheAreaUnderCurve (AUC)values shown in the summary are very close to
+1.0, indicating that the classifier has high accuracy and strong class
+separation capability
